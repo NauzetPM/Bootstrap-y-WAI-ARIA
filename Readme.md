@@ -9,8 +9,8 @@ Código mejorado con WAI-ARIA:
 <button type="button" class="btn btn-primary" role="button" aria-label="Enviar formulario">Enviar</button>
 ```
 Explicación:
-    role="button": Aunque el botón ya tiene el papel de "botón", especificarlo explícitamente mejora la accesibilidad.
-    aria-label="Enviar formulario": Proporciona una descripción más clara para los usuarios de lectores de pantalla, especificando que el botón es para "enviar formulario", en lugar de solo "enviar".
+role="button": Aunque el botón ya tiene el papel de "botón", especificarlo explícitamente mejora la accesibilidad.
+aria-label="Enviar formulario": Proporciona una descripción más clara para los usuarios de lectores de pantalla, especificando que el botón es para "enviar formulario", en lugar de solo "enviar".
 
 ## Elemento 2: Modal
 Código original (Bootstrap):
@@ -55,9 +55,9 @@ Código mejorado con WAI-ARIA:
 ```
 Explicación:
 
-    role="dialog": Indica que el elemento es un cuadro de diálogo, lo que ayuda a los usuarios con tecnologías asistivas a identificarlo correctamente.
-    aria-labelledby="modalTitle": Asocia el título del modal con el elemento de encabezado para mejorar la navegación del lector de pantalla.
-    aria-describedby="modalDescription": Proporciona una descripción del contenido del modal, lo cual es útil para los usuarios que necesitan más contexto.
+role="dialog": Indica que el elemento es un cuadro de diálogo, lo que ayuda a los usuarios con tecnologías asistivas a identificarlo correctamente.
+aria-labelledby="modalTitle": Asocia el título del modal con el elemento de encabezado para mejorar la navegación del lector de pantalla.
+aria-describedby="modalDescription": Proporciona una descripción del contenido del modal, lo cual es útil para los usuarios que necesitan más contexto.
 
 ## Elemento 3: Menú desplegable
 Código original (Bootstrap):
@@ -88,9 +88,9 @@ Código mejorado con WAI-ARIA:
 ```
 Explicación:
 
-    aria-expanded="false": Este atributo indica si el menú está desplegado o no, proporcionando contexto adicional a los usuarios de tecnologías asistivas.
-    aria-controls="dropdownMenu": Relaciona el botón con el menú desplegable para indicar que el botón controla la visibilidad del menú.
-    role="menu" y role="menuitem": Estos roles son necesarios para definir el propósito del menú y sus elementos, mejorando la navegación y la comprensión del contenido.
+aria-expanded="false": Este atributo indica si el menú está desplegado o no, proporcionando contexto adicional a los usuarios de tecnologías asistivas.
+aria-controls="dropdownMenu": Relaciona el botón con el menú desplegable para indicar que el botón controla la visibilidad del menú.
+role="menu" y role="menuitem": Estos roles son necesarios para definir el propósito del menú y sus elementos, mejorando la navegación y la comprensión del contenido.
 
 ## Elemento 4: Alerta
 Código original (Bootstrap):
@@ -107,8 +107,8 @@ Código mejorado con WAI-ARIA:
 ```
 Explicación:
 
-    aria-live="assertive": Indica que la alerta debe ser anunciada de inmediato por el lector de pantalla, mejorando la experiencia para el usuario al recibir notificaciones importantes.
-    aria-atomic="true": Asegura que todo el contenido de la alerta sea anunciado como una unidad, lo que es útil para no fragmentar el mensaje de alerta.
+aria-live="assertive": Indica que la alerta debe ser anunciada de inmediato por el lector de pantalla, mejorando la experiencia para el usuario al recibir notificaciones importantes.
+aria-atomic="true": Asegura que todo el contenido de la alerta sea anunciado como una unidad, lo que es útil para no fragmentar el mensaje de alerta.
 
 ## Elemento 5: Pestañas (Tabs)
 Código original (Bootstrap):
@@ -151,5 +151,5 @@ Código mejorado con WAI-ARIA:
 ```
 Explicación:
 
-    aria-label="Pestañas de navegación": Proporciona una descripción del conjunto de pestañas, útil para usuarios de lectores de pantalla.
-    aria-labelledby: Asocia cada contenido con el identificador de la pestaña correspondiente para mejorar la navegación entre las pestañas.
+aria-label="Pestañas de navegación": Proporciona una descripción del conjunto de pestañas, útil para usuarios de lectores de pantalla.
+aria-labelledby: Asocia cada contenido con el identificador de la pestaña correspondiente para mejorar la navegación entre las pestañas.
